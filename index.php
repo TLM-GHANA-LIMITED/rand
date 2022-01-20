@@ -9,7 +9,7 @@
 
     $sqlQuery = "select image_url from random_images";
     
-    $result = $this->Administrator_Model->getArrayQuery($sqlQuery);
+    $result = $this->My_Model->getAllQuery($sqlQuery);
     
     $image = $result[array_rand($result)];
     
